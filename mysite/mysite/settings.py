@@ -123,3 +123,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Конфигурация сервера электронной почты
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"  # для отладки, письма уходят в консоль
+EMAIL_HOST = "smtp.yandex.ru"
+EMAIL_HOST_USER = "artuhovse@yandex.ru"
+EMAIL_HOST_PASSWORD = "zwffuacrkameljti"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
